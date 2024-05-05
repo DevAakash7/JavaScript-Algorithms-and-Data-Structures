@@ -27,7 +27,7 @@ main {
 
 h1 {
     color: var(--light-grey);
-    margin: 20px 0 40px 0;
+    margin: 20px 0px 40px 0;
 }
 
 .todo-app {
@@ -54,12 +54,12 @@ h1 {
     border-width: 3px;
 }
 
-.btn:hover {
+.btn:hower {
     background-image: linear-gradient(#ffcc4c, #f89808);
 }
 
 .large-btn {
-    width: 80%;
+    width: 80%;;
     font-size: 1.2rem;
     align-self: center;
     justify-self: center;
@@ -83,7 +83,7 @@ h1 {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: var(--white);
-    border-radius: 5px;
+    border-radius: 15px;
     padding: 15px;
     width: 300px;
     height: 350px;
@@ -138,7 +138,7 @@ h1 {
 .confirm-close-dialog-btn-container {
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    margin: 10px;
 }
 
 .discard-message-text {
@@ -160,13 +160,11 @@ h1 {
 }
 
 @media (min-width: 576px) {
-
     .todo-app,
     .task-form {
         width: 400px;
         height: 450px;
     }
-
     .task-form-label {
         font-size: 1.5rem;
     }
