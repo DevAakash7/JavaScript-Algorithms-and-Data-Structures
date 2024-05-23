@@ -1,3 +1,15 @@
+const mean = document.getElementById("mean");
+const median = document.getElementById("median");
+const mode = document.getElementById("mode");
+const range = document.getElementById("range");
+const variance = document.getElementById("variance");
+const standardDeviation = document.getElementById("standard-deviation");
+const inputValues = document.getElementById("numbers");
+
+const form = document.getElementById("form");
+const convertBtn = document.getElementById("convert-btn");
+
+
 const getMean = (array) => array.reduce((acc, el) => acc + el, 0) / array.length;
 
 const getMedian = (array) => {
@@ -47,31 +59,20 @@ const getStandardDeviation = (array) => {
 }
 
 const calculate = () => {
-    const value = document.querySelector("#numbers").value;
-    const array = value.split(/,\s*/g);
+    const array = inputValues.value.split(/,\s*/g);
     const numbers = array.map(el => Number(el)).filter(el => !isNaN(el));
-    
-    const mean = getMean(numbers);
-    const median = getMedian(numbers);
-    const mode = getMode(numbers);
-    const range = getRange(numbers);
-    const variance = getVariance(numbers);
-    const standardDeviation = getStandardDeviation(numbers);
 
-    document.querySelector("#mean").textContent = mean;
-    document.querySelector("#median").textContent = median;
-    document.querySelector("#mode").textContent = mode;
-    document.querySelector("#range").textContent = range;
-    document.querySelector("#variance").textContent = variance;
-    document.querySelector("#standard-deviation").textContent = standardDeviation;
+    mean.textContent = getMean(numbers);
+    median.textContent = getMedian(numbers);
+    mode.textContent = getMode(numbers);
+    range.textContent = getRange(numbers);
+    variance.textContent = getVariance(numbers);
+    standardDeviation.textContent = getStandardDeviation(numbers);
 }
-
-const form = document.getElementById("form");
-const convertBtn = document.getElementById("convert-btn");
 
 form.addEventListener("submit", e => {
     e.preventDefault();
     calculate();
 });
 
-convertBtn.addEventListener("click", calculate());
+convertBtn.addEventListener("click", calculate);
