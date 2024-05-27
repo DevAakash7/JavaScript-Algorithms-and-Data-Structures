@@ -16,7 +16,7 @@ function validateIndianNumber(input) {
 
 const checkValidNumber = input => {
     if (input === '') {
-        alert('Please provide aphone number')
+        alert('Please provide a phone number')
         return;
     }
 
