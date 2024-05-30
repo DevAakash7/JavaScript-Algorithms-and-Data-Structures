@@ -9,7 +9,7 @@ This repository contains my solutions and implementations for the JavaScript Alg
 - Contributing
 
 ## Installation
-1. Clone this repository: `git clone https://github.com/DevAakash7/JavaScript-Algorithms-and-Data-Structures.git`
+1. [Clone this repository](https://github.com/DevAakash7/JavaScript-Algorithms-and-Data-Structures.git)
 2. Navigate to the project folder: `cd JavaScript-Algorithms-and-Data-Structures`
 3. Install dependencies (if any): `npm install`
 
