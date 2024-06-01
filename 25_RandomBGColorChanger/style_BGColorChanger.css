@@ -19,6 +19,10 @@ body {
     text-align: center;
 }
 
+header {
+    margin: 20px 0;
+}
+
 .bg-info-container {
     margin: 15px 0 25px;
     font-size: 1.2rem;
@@ -31,8 +35,10 @@ body {
     color: var(--dark-purple);
     background-color: var(--golden-yellow);
     background-image: linear-gradient(#fecc4c, #ffac33);
-    border-color: var(--golden-yellow);
-    border-width: 3px;
+    border: 3px solid var(--golden-yellow);
+    border-radius: 5px;
+    font-size: 0.9rem;
+    transition: background 0.3s ease;
 }
 
 .btn:hover {
